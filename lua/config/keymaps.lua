@@ -7,3 +7,7 @@ local map = LazyVim.safe_keymap_set
 
 -- 退出编辑
 map("i", "jk", "<esc><esc>", { desc = "退出编辑" })
+
+-- buffers
+map("n", "<Tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<S-Tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
